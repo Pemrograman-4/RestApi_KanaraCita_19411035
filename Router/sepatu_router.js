@@ -12,4 +12,10 @@ router.get("/get", (req, res) => {
     .catch((err) => res.json(err));
 });
 
+// delete data
+router.delete("/delete/:id", Controller.delete);
+
+// update data
+router.put("/update/:id", Controller.update);
+
 module.exports = router;
